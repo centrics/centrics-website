@@ -1,0 +1,62 @@
+debug()
+  background rgba(lime, .2)
+
+wrapper()
+  max-width $wrapper-size
+  margin 0 auto
+
+  +below('desktop-large')
+    padding 0 3em
+
+  +below('phone')
+    padding 0 2em
+
+bg($type = 'img', $file)
+  background-image url('../' + $type + '/' + $file)
+  background-repeat no-repeat
+
+transition($prop, $time = .3s)
+  transition $prop $time ease
+
+list-reset()
+  padding 0
+  margin 0
+  list-style none
+
+placeholder()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+
+animate-multi($num-of-items)
+  animation cascade .5s ease-out, fade 1s ease-out
+  animation-fill-mode both
+
+  for i in (1..$num-of-items)
+    &:nth-child({i})
+      animation-delay (.2s * i)
+
+animate()
+  animation cascade .8s ease-out, fade 1s ease-out
+  animation-fill-mode both
+
+animate-image()
+  animation cascade .8s ease-out
+  animation-fill-mode both
+
+@keyframes cascade
+  0%
+    transform translate3d(0, -50px, 0)
+  100%
+    transform translate3d(0, 0, 0)
+
+@keyframes fade
+  0%
+    opacity 0
+  100%
+    opacity 1

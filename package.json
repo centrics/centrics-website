@@ -1,0 +1,20 @@
+{
+  "name": "centrics-website",
+  "description": "Centrics website",
+  "version": "0.1.0",
+  "author": {
+    "name": "Diogo Moretti",
+    "url": "diogo.pearljam@gmail.com"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-connect": "^5.0.0",
+    "gulp-stylus": "^2.6.0",
+    "nib": "*",
+    "rupture": "^0.7.1",
+    "stylus": "*"
+  },
+  "dependencies": {
+    "gulp-plumber": "~0.5.6"
+  }
+}

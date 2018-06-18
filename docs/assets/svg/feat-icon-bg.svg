@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="97px" viewBox="0 0 88 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-307.000000, -905.000000)" fill="#42EFBD">
+            <g id="CARDS" transform="translate(190.000000, 905.000000)">
+                <g id="card">
+                    <g id="icon" transform="translate(108.000000, 0.000000)">
+                        <path d="M28.1447614,29.2792508 C8.36769029,47.11916 26.1925828,91.9862314 44.3508473,103.717323 C62.5091118,115.448415 91.0019096,96.8516612 87.094549,76.1886014 C83.1871884,55.5255415 49.4834275,61.0426986 54.3324128,45.5003535 C59.1813981,29.9580083 47.9218325,11.4393416 28.1447614,29.2792508 Z" id="Path-204" fill-opacity="0.119999997" transform="translate(53.470171, 64.665695) rotate(-63.000000) translate(-53.470171, -64.665695) "></path>
+                        <circle id="Oval" fill-opacity="0.120000005" cx="38.5" cy="14.5" r="14.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
