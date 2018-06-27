@@ -618,7 +618,7 @@ body {
 .header-feature__image {
   position: absolute;
   left: 50%;
-  top: 30%;
+  bottom: 0;
   max-width: 1000px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.1);
@@ -823,7 +823,7 @@ body {
   list-style: none;
 }
 .app-item {
-  margin: 18em 0;
+  padding: 18em 0;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -834,6 +834,7 @@ body {
 @media only screen and (max-width: 580px) {
   .app-item {
     display: block;
+    padding: 10em 0;
   }
 }
 .app-item.reverse {
@@ -846,6 +847,9 @@ body {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+}
+.app-item.reverse .graphic:before {
+  left: 0;
 }
 .app-item-column {
   -webkit-box-flex: 1;
@@ -879,6 +883,62 @@ body {
   -webkit-flex-basis: 40%;
   flex-basis: 40%;
   padding-right: 5em;
+}
+.app-item-column.graphic {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.app-item-column.graphic:before {
+  content: '';
+  position: absolute;
+  left: -4em;
+  top: -10em;
+  bottom: -10em;
+  width: 100%;
+  background-image: url("../svg/bg-app-item.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
+@media only screen and (max-width: 580px) {
+  .app-item-column.graphic:before {
+    left: 0;
+  }
+}
+.app-item-column.graphic img {
+  width: 80%;
+  z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+  .app-item-column.graphic img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .app-item-column.graphic img {
+    margin-bottom: 5em;
+  }
 }
 .app-item__header {
   display: block;

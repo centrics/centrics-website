@@ -175,7 +175,7 @@
     &__image
       position absolute
       left 50%
-      top 30%
+      bottom 0
       max-width 1000px
       border-radius 5px
       box-shadow 0 0 40px rgba(#000, .1)
@@ -283,14 +283,18 @@
     list-reset()
 
   &-item
-    margin 18em 0
+    padding 18em 0
     display flex
 
     +below('phone')
       display block
+      padding 10em 0
 
     &.reverse
       flex-direction row-reverse
+
+      .graphic:before
+        left 0
 
     &-column
       flex 1
@@ -301,6 +305,36 @@
         flex 0
         flex-basis 40%
         padding-right 5em
+
+      &.graphic
+        position relative
+        display flex
+        align-items center
+        justify-content center
+
+        &:before
+          content ''
+          position absolute
+          left -4em
+          top -10em
+          bottom @top
+          width 100%
+          bg('svg', 'bg-app-item.svg')
+          background-size 100% 100%
+          opacity .9
+
+          +below('phone')
+            left 0
+
+        img
+          width 80%
+          z-index 2
+
+          +below('tablet')
+            width 100%
+
+          +below('phone')
+            margin-bottom 5em
 
     &__header
       display block
