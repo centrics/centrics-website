@@ -124,16 +124,19 @@
             display none
 
   &-content
-    height 80%
+    height 87%
     display flex
 
     +below('phone')
-      height 65%
+      height 84%
 
     &-column
       flex-basis 50%
       display flex
       align-items center
+
+      +below('desktop-small')
+        flex-basis 70%
 
       +below('phone')
         flex-basis 0
@@ -155,7 +158,7 @@
 
       +below('phone')
         font-size 3.2rem
-        line-height 1.6
+        line-height 1.3
 
     &__description
       font-size 1.6rem
@@ -174,7 +177,7 @@
 
     &__image
       position absolute
-      left 50%
+      left 55%
       bottom 0
       max-width 1000px
       border-radius 5px
@@ -184,12 +187,15 @@
       +below('desktop-large')
         bottom -4em
 
+      +below('desktop-small')
+        left 65%
+
       +below('phone')
         display none
 
 .features
   position relative
-  padding 6em 0 30em
+  padding 4em 0 25em
 
   +below('desktop-large')
     padding-bottom 25em
@@ -280,7 +286,7 @@
 
 .app
   background #f5f5f5
-  padding 1em 0 10em
+  padding 1em 0 5em
 
   +below('phone')
     padding-bottom 1em
@@ -292,7 +298,7 @@
     list-reset()
 
   &-item
-    padding 15em 0
+    padding 13em 0
     display flex
 
     +below('desktop-small')
@@ -374,7 +380,7 @@
 
 .services
   position relative
-  padding 23em 0 10em
+  padding 25em 0 8em
   background #e1f4ee
 
   +below('phone')
