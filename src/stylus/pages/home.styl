@@ -124,16 +124,19 @@
             display none
 
   &-content
-    height 80%
+    height 87%
     display flex
 
     +below('phone')
-      height 65%
+      height 84%
 
     &-column
       flex-basis 50%
       display flex
       align-items center
+
+      +below('desktop-small')
+        flex-basis 70%
 
       +below('phone')
         flex-basis 0
@@ -155,7 +158,7 @@
 
       +below('phone')
         font-size 3.2rem
-        line-height 1.6
+        line-height 1.3
 
     &__description
       font-size 1.6rem
@@ -174,7 +177,7 @@
 
     &__image
       position absolute
-      left 50%
+      left 55%
       bottom 0
       max-width 1000px
       border-radius 5px
@@ -184,12 +187,15 @@
       +below('desktop-large')
         bottom -4em
 
+      +below('desktop-small')
+        left 65%
+
       +below('phone')
         display none
 
 .features
   position relative
-  padding 6em 0 30em
+  padding 4em 0 25em
 
   +below('desktop-large')
     padding-bottom 25em
@@ -280,7 +286,7 @@
 
 .app
   background #f5f5f5
-  padding 1em 0 10em
+  padding 1em 0 5em
 
   +below('phone')
     padding-bottom 1em
@@ -292,7 +298,7 @@
     list-reset()
 
   &-item
-    padding 15em 0
+    padding 13em 0
     display flex
 
     +below('desktop-small')
@@ -374,7 +380,7 @@
 
 .services
   position relative
-  padding 23em 0 10em
+  padding 25em 0 8em
   background #e1f4ee
 
   +below('phone')
@@ -470,7 +476,7 @@
 
 .footer
   position relative
-  padding 10em 0 5em
+  padding 7em 0 5em
   background rgb(34,255,128)
   background linear-gradient(53deg, $color-text 0%, ($color-text - 30%) 100%)
   overflow hidden
@@ -517,7 +523,7 @@
     z-index 5
     position relative
     padding-top 20em
-    padding-bottom 20em
+    padding-bottom 15em
     display flex
     border-bottom 1px solid rgba(#ccc, .1)
 
@@ -606,40 +612,10 @@
         padding 1em 2em
 
   &-company
-    display flex
     padding-top 3em
 
     +below('phone')
       flex-wrap wrap
-
-    &-column
-      &.institutional
-        padding-top .3em
-        padding-right 8em
-
-        +below('phone')
-          order 2
-          width 100%
-          margin-top 3em
-          padding-top 3em
-          border-top 1px solid rgba(#ccc, .1)
-
-      &.partners-title
-        padding-top .4em
-        padding-right 2em
-
-        +below('phone')
-          order -1
-          width 100%
-          margin-bottom 1em
-          padding-left .5em
-
-      &.partners
-        flex 1
-
-        +below('phone')
-          order 1
-          width 100%
 
     &__logo
       display block
@@ -656,49 +632,48 @@
       font-style normal
       font-size 1.2rem
 
-  &-partners
-    &-title
-      padding .4em 0
-      margin 0
-      font-size 1.3rem
-      font-weight normal
-      color #fff
-      text-transform uppercase
-      letter-spacing .2em
+.partners
+  padding-top 3em
 
-    &-list
-      list-reset()
-      display flex
+  &-title
+    padding .4em 0
+    margin 0
+    font-size 1.3rem
+    font-weight normal
+    color #fff
+    text-transform uppercase
+    letter-spacing .2em
 
-      +below('desktop-large')
-        flex-wrap wrap
+  &-list
+    list-reset()
+    display flex
+    margin-top 1em
 
-    &-item
-      display flex
-      align-items center
-      padding 0 1em
-      flex 1
+    +below('desktop-large')
+      flex-wrap wrap
 
-      +below('desktop-large')
-        padding 0 1em 1em 1em
+  &-item
+    display flex
+    align-items left
+    padding 0
+    flex 1
 
-      +below('phone')
-        flex 0
-        width 50%
-        margin 2em 0
-        padding 0 1em 0 0
+    +below('tablet')
+      padding 1em 0
 
-      a
-        text-decoration none
-        display block
-        text-align left
-        width 100%
-        opacity .7
-        transition(opacity)
+    a
+      text-decoration none
+      display block
+      text-align left
+      width 100%
+      transition(opacity)
 
-        &:hover
-          opacity 1
+      &:hover
+        opacity .9
 
-      img
-        display inline-block
-        max-width 150px
+    img
+      display inline-block
+      max-width 110px
+
+      +below('tablet')
+        max-width 130px
