@@ -1,0 +1,45 @@
+.partners
+  padding-top 3em
+
+  &-title
+    padding .4em 0
+    margin 0
+    font-size 1.3rem
+    font-weight normal
+    color #fff
+    text-transform uppercase
+    letter-spacing .2em
+
+  &-list
+    list-reset()
+    display flex
+    margin-top 1em
+
+    +below('desktop-large')
+      flex-wrap wrap
+
+  &-item
+    display flex
+    align-items left
+    padding 0
+    flex 1
+
+    +below('tablet')
+      padding 1em 0
+
+    a
+      text-decoration none
+      display block
+      text-align left
+      width 100%
+      transition(opacity)
+
+      &:hover
+        opacity .9
+
+    img
+      display inline-block
+      max-width 110px
+
+      +below('tablet')
+        max-width 130px
