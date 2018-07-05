@@ -1512,7 +1512,7 @@ body {
     padding-left: 0.5em;
   }
 }
-.footer-company-column.partners {
+.footer-company-column.partners-group {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -o-box-flex: 1;
@@ -1522,7 +1522,7 @@ body {
   flex: 1;
 }
 @media only screen and (max-width: 580px) {
-  .footer-company-column.partners {
+  .footer-company-column.partners-group {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
     -o-box-ordinal-group: 1;
