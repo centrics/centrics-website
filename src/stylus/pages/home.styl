@@ -7,7 +7,7 @@
   overflow hidden
 
   +below('phone')
-    height 95%
+    height 700px
 
   &:before
     content ''
@@ -191,6 +191,9 @@
   position relative
   padding 6em 0 30em
 
+  +below('desktop-large')
+    padding-bottom 25em
+
   +below('phone')
     padding 10em 0
 
@@ -267,7 +270,7 @@
       padding .3em 0
       margin 0
       font-weight bold
-      line-height 1.6
+      line-height 1.3
 
     &__description
       margin 0
@@ -289,9 +292,12 @@
     padding 15em 0
     display flex
 
+    +below('desktop-small')
+      padding 8em 0
+
     +below('phone')
       display block
-      padding 10em 0
+      padding 6em 0
 
     &.reverse
       flex-direction row-reverse
@@ -416,8 +422,14 @@
     display flex
     border-bottom 1px solid rgba(#ccc, .1)
 
-    +below('phone')
+    +below('desktop-large')
+      padding-top 8em
+      padding-bottom @padding-top
+
+    +below('tablet')
       display block
+
+    +below('phone')
       padding 0
       padding-bottom 5em
 
@@ -449,7 +461,7 @@
         display flex
         justify-content flex-end
 
-        +below('phone')
+        +below('tablet')
           justify-content flex-start
 
     &__input
@@ -559,7 +571,7 @@
       list-reset()
       display flex
 
-      +below('phone')
+      +below('desktop-large')
         flex-wrap wrap
 
     &-item
@@ -567,6 +579,9 @@
       align-items center
       padding 0 1em
       flex 1
+
+      +below('desktop-large')
+        padding 0 1em 1em 1em
 
       +below('phone')
         flex 0
